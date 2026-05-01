@@ -6,8 +6,8 @@ This project is a simple Python program that checks whether a given date is vali
 
 * Validates date based on day, month, and year
 * Handles leap year conditions
-* Checks correct number of days in each month
-* Returns valid or invalid result
+* Checks the correct number of days in each month
+* Returns a valid or invalid result
 
 ## 🧠 Logic Used
 
