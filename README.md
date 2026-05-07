@@ -1,51 +1,90 @@
-# 📅 Date Validator using Python
+# 📅 Date Validator
 
-This project is a simple Python program that checks whether a given date is valid or not based on day, month, and year inputs.
+A Python program that validates whether a given date (day, month, year) is a **real, valid calendar date** — including proper leap year handling and month-wise day limits.
+
+---
 
 ## 🚀 Features
 
-* Validates date based on day, month, and year
-* Handles leap year conditions
-* Checks the correct number of days in each month
-* Returns a valid or invalid result
+- ✅ Validates day, month, and year inputs
+- 🗓️ Handles **leap year** logic correctly
+- 📆 Checks correct number of days per month (28/29/30/31)
+- ❌ Returns clear valid/invalid result
+- 🔢 Covers edge cases like Feb 29 in leap years
 
-## 🧠 Logic Used
-
-* Leap year calculation:
-
-  * Year divisible by 400 OR
-  * Year divisible by 4 but not by 100
-* Month-wise day validation:
-
-  * February (28/29 days)
-  * April, June, September, November (30 days)
-  * Remaining months (31 days)
+---
 
 ## 🛠️ Technologies Used
 
-* Python
-* Conditional statements (if-else)
+- **Language:** Python 3
+- **Concepts:** Conditional Statements (if-else), Leap Year Logic, Input Validation
 
-## 📌 Example
+---
 
-Input:
+## 📌 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/priyanshupatel-tech/Date-Validator-Python.git
+   cd Date-Validator-Python
+   ```
+
+2. Run the program:
+   ```bash
+   python Project8.py
+   ```
+
+3. Enter day, month, and year when prompted.
+
+---
+
+## 🖥️ Sample Output
 
 ```
-Day = 3, Month = 4, Year = 2008
+Enter Day: 29
+Enter Month: 2
+Enter Year: 2024
+
+✅ Valid Date — 29/02/2024 is a real date (2024 is a leap year)
 ```
 
-Output:
+```
+Enter Day: 31
+Enter Month: 4
+Enter Year: 2023
 
+❌ Invalid Date — April has only 30 days
 ```
-Valid Date (1)
-```
+
+---
+
+## 🧠 Logic Breakdown
+
+**Leap Year:**
+- Divisible by 400 → Leap year
+- Divisible by 4 but NOT by 100 → Leap year
+- Otherwise → Not a leap year
+
+**Month Day Limits:**
+| Months | Max Days |
+|--------|----------|
+| January, March, May, July, August, October, December | 31 |
+| April, June, September, November | 30 |
+| February (normal year) | 28 |
+| February (leap year) | 29 |
+
+---
 
 ## 💡 Learning Outcomes
 
-* Understanding of conditional logic
-* Handling real-world date validation
-* Implementing leap year logic in Python
+- Implementing real-world date validation logic
+- Understanding leap year calculation
+- Writing clean, readable conditional code in Python
+
+---
 
 ## 👨‍💻 Author
 
-Priyanshu
+**Priyanshu Patel**
+- 🔗 [LinkedIn](https://www.linkedin.com/in/priyanshupatel-tech/)
+- 💻 [GitHub](https://github.com/priyanshupatel-tech)
